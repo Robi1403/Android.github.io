@@ -80,7 +80,7 @@ a:hover::after{
 }
 
 a:hover{
-    font-weight: bold;
+    font-weight: 500;
 }
 
 
