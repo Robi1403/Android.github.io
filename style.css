@@ -26,7 +26,10 @@ html{
     overflow: hidden;
     background-color: white;
     z-index: 1000;
+
 }
+
+
 
 .content{
     z-index: 1;
@@ -48,14 +51,31 @@ html{
    
 }
 
-.navigate a{
+a{
     text-decoration: none;
-    color: black;
+    color: #38AE54;
     margin-right: 63px;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
+    position: relative;
 }
+
+a::after{
+    content: "";
+    position: absolute;
+    background-color: #38AE54;
+    height: 3px;
+    width: 0;
+    left: 0;
+    transition: 0.3s;
+    bottom: -10px;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
 
 .landingPage{
     margin-top: 70px;
